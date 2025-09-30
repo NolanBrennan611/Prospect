@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PRQspect',
+      title: 'PROspect',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         fontFamily: 'Mada'

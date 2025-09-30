@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/account_card.dart';
 import '../widgets/radio_button.dart';
+import '../widgets/login_inputs.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -60,10 +61,10 @@ class _SignupScreenState extends State<SignupScreen> {
                         // Sign in / Login buttons
                         Container(
                           width: double.infinity,
-                          padding: const EdgeInsets.all(16),  // Add padding for children
+                          padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(33, 172, 245, 255),
-                            borderRadius: BorderRadius.circular(12),  // Add border radius
+                            color: Colors.white24,
+                            borderRadius: BorderRadius.circular(12),
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -89,13 +90,13 @@ class _SignupScreenState extends State<SignupScreen> {
                             ]
                           ),
                         ),
-                        const SizedBox(height: 24),
+                        const SizedBox(height: 16),
                         if(selectedFormType == 'Sign Up') ...[
                           Container(
                           width: double.infinity,
                           padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(33, 172, 245, 255),
+                            color: Colors.white24,
                             borderRadius: BorderRadius.circular(12), 
                           ),
                           child: Column( 
@@ -138,7 +139,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             ],
                           ),
                         ),
-                        ] else Container(),
+                        ] else LoginInputs(),
                         
                         const SizedBox(height: 24),
                         
