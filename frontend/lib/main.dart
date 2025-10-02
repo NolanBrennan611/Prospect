@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'screens/signup_screen.dart';
+import 'views/pages/home_page.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'views/widget_tree.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -13,10 +16,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'PROspect',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'Mada'
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+          ),
+        fontFamily: 'Mada',
+        useMaterial3: true
       ),
-      home: const SignupScreen(),
+      home: WidgetTree(),
       debugShowCheckedModeBanner: false,
     );
   }

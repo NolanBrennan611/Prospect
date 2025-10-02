@@ -20,8 +20,8 @@ class AccountCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: isSelected
-          ? const Color(0x6BACF6FF) // Light blue when selected
-          : Colors.white70,              // White when not selected
+          ? const Color(0xFF6BACF6) // Light blue when selected
+          : Colors.white70,         // White when not selected
       borderRadius: BorderRadius.circular(12),
       child: InkWell(
         onTap: onTap,

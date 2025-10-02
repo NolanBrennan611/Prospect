@@ -38,6 +38,7 @@ dependencies:
   dio: ^5.9.0
   firebase_core: ^4.1.1
   firebase_messaging: ^16.0.2
+  flutter_native_splash: ^2.4.6
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +70,7 @@ flutter:
     - lib/assets/images/logo-white.png
     - lib/assets/images/logo-black.png
     - lib/assets/images/background.png
+    - lib/assets/images/transparent.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -107,3 +109,14 @@ flutter:
           weight: 300
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_native_splash:
+  color: "#6BACF6"
+  image: lib/assets/images/logo-white.png
+  image_dark: lib/assets/images/logo-black.png
+  android_12:
+    color: "#6BACF6"
+    icon_background_color: "#6BACF6"
+    image: lib/assets/images/transparent.png
+    image_dark: lib/assets/images/transparent.png
+  ios: true
+

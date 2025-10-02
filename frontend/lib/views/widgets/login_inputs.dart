@@ -48,7 +48,7 @@ class _LoginInputsState extends State<LoginInputs> {
             ),
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
-              vertical: 8,
+              vertical: 6,
             ),
           ),
         ),

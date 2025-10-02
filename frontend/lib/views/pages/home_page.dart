@@ -3,14 +3,14 @@ import '../widgets/account_card.dart';
 import '../widgets/radio_button.dart';
 import '../widgets/login_inputs.dart';
 
-class SignupScreen extends StatefulWidget {
-  const SignupScreen({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<SignupScreen> createState() => _SignupScreenState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _SignupScreenState extends State<SignupScreen> {
+class _HomePageState extends State<HomePage> {
   // Track which account type is selected
   String selectedFormType = 'Sign Up';
   String selectedAccountType = 'Player';
@@ -147,7 +147,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () { Navigator.pushNamed(context, '/Register$selectedAccountType'); },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0x6BACF6FF),
                               foregroundColor: Colors.white,
